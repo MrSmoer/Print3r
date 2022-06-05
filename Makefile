@@ -12,10 +12,10 @@ all::
 	@echo "-- on low RAM systems use 'apt install cpanminus' and then 'make CPAN=cpanm requirements'"
 
 requirements::
-	sudo apt install libexpat-dev libcurses-perl libncurses5-dev libreadline-dev -y
+	sudo apt-get install libexpat-dev libcurses-perl libncurses5-dev libreadline-dev -y
 	sudo ${CPAN} File::Which IO::Zlib Time::HiRes Device::SerialPort XML::Simple JSON IO::Termios Term::ReadLine::Gnu Linux::Termios2 Algorithm::BinPack::2D 
-	sudo apt install libgd-perl ser2net socat slic3r -y
-	sudo apt install yagv -y
+	sudo apt-get install libgd-perl ser2net socat slic3r -y
+	sudo apt-get install yagv -y
 
 install::
 	sudo cp ${CMD} ${DEST_BIN}/
